@@ -120,7 +120,7 @@ Paquetes.defaultProps = {
   heading3: '$40,000*',
   text1: 'Paquete',
   heading: 'MAX',
-  heading31: '$3,588*',
+  heading31: '$1,188*',
   text2: 'Paquete',
   rootClassName2: '',
   heading1: 'Desk Flex',

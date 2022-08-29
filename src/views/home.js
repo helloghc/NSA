@@ -15,7 +15,7 @@ const Home = (props) => {
         <title>Sistema de Alertamiento Sísmico: Seguridad Garantizada</title>
         <meta
           name="description"
-          content="Sistema de alertamiento sísmico que detecta los eventos momentos antes de que se produzcan y notifica a los usuarios en peligro. ¡Conócelo!"
+          content="Sistema de alertamiento sísmico, detectamos al momento de producirse un sismo y notificamos a los usuarios antes de que llegue a su localidad. ¡Conócelo!"
         />
         <meta
           property="og:title"

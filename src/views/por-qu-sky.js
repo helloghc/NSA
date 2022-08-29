@@ -585,7 +585,7 @@ const PorQuSky = (props) => {
               <span className="por-qu-sky-text64">SkyAlert</span>
             </h2>
             <span className="por-qu-sky-text65">
-              Generamos confianza en aquellos en lo que ponemos la nuestra
+              Generamos confianza en aquellos clientes que confían en nosotros
             </span>
           </div>
         </div>

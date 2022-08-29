@@ -1374,8 +1374,7 @@ const Suite = (props) => {
               <span className="suite-text184"></span>
             </h2>
             <span className="suite-text185">
-              Tenemos la solución precisa para tu empresa. En breve, un asesor
-              se comunicará contigo.
+              Tenemos la solución precisa para tu empresa. Contáctanos y en breve un asesor se comunicará contigo 
             </span>
           </div>
         </div>
