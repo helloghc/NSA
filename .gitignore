@@ -1,1 +1,8 @@
-
+# Ignore file system macOS
+.DS_store
+# Ignore the node_modules directory
+node_modules/
+# Ignore the build directory
+build/
+# Ignore IDE specific files
+.vscode/
