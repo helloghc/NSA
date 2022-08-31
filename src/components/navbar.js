@@ -59,7 +59,7 @@ const Navbar = (props) => {
                 {props.text1}
               </Link>
               <Link
-                to="/suite"
+                to="/suite-de-soluciones"
                 className="navbar-navlink navbar-link"
               >
                 {props.text11}
@@ -84,7 +84,11 @@ const Navbar = (props) => {
               </Link>
             </nav>
             <button className="navbar-primary-btn button-primary button">
-              {props.PrimaryBtn1}
+            <a
+              href="https://safety.skyalert.mx/login"
+              target="_blank"
+              rel="noreferrer noopener"
+            >{props.PrimaryBtn1}</a>
             </button>
           </div>
           <div className="navbar-social-media">

@@ -63,7 +63,7 @@ const Navbarblack = (props) => {
                 {props.text3}
               </Link>
               <a
-                href="https://www.secureserver.center/por-que-skyalert"
+                href="/por-que-skyalert"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="navbarblack-link navbar-link"
@@ -78,7 +78,11 @@ const Navbarblack = (props) => {
               </Link>
             </nav>
             <button className="navbarblack-primary-btn button-primary button">
-              {props.PrimaryBtn1}
+              <a
+                href="https://safety.skyalert.mx/login"
+                target="_blank"
+                rel="noreferrer noopener"
+              >{props.PrimaryBtn1}</a>
             </button>
           </div>
           <div className="navbarblack-social-media">
@@ -143,7 +147,7 @@ Navbarblack.defaultProps = {
   text41: 'Prensa',
   text1: 'Home',
   image_src3: 'cc48d0e5-a601-47f6-ac83-ca5733ad27ae',
-  PrimaryBtn1: 'Get started',
+  PrimaryBtn1: 'Acceso a clientes',
   text11: 'Suite de soluciones',
   image_alt: 'image',
   image_src2: 'cc48d0e5-a601-47f6-ac83-ca5733ad27ae',

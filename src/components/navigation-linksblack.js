@@ -35,7 +35,9 @@ const NavigationLinksblack = (props) => {
       <Link to="/prensa" className="navigation-linksblack-navlink4 navbar-link">
         {props.text41}
       </Link>
-    
+      <Link to="/blog" className="navigation-linksblack-navlink5 navbar-link">
+        {props.text411}
+      </Link>
     </nav>
   )
 }
