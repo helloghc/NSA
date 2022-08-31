@@ -42,6 +42,7 @@ const NavigationLinks = (props) => {
   )
 }
 
+
 NavigationLinks.defaultProps = {
   text411: 'SkyAlert News',
   text2: 'App',

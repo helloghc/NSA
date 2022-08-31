@@ -155,6 +155,7 @@ Navbar.defaultProps = {
   text1: 'Home',
   rootClassName: '',
   PrimaryBtn1: 'Acceso a clientes',
+  
 }
 
 Navbar.propTypes = {

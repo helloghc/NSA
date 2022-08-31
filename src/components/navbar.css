@@ -115,6 +115,7 @@
 .navbar-navlink5:hover {
   color: var(--dl-color-backgrounds-primary);
 }
+
 .navbar-primary-btn {
   margin-top: var(--dl-space-space-oneandhalfunits);
 }
@@ -123,6 +124,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  display: none;
 }
 .navbar-text1 {
   font-size: 18px;
@@ -233,6 +235,7 @@
   }
   .navbar-mobile-menu {
     background-color: grey;
+    position:fixed;
   }
   .navbar-nav2 {
     width: 100%;

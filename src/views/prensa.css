@@ -330,11 +330,27 @@ border-radius: 15px;
 }
 @media(max-width: 479px) {
   .prensa-container01 {
+    
     width: 80%;
     margin: 0;
   }
+   .paginated{
+
+     padding: 0px !important;
+         width: 90% !important;
+   }
+   .paginated ul{
+     width: 90% !important;
+    margin: 0 auto;
+   }
+     .paginated ul li{
+       padding: 5px !important;
+    margin: 2px;
+     }
+
   .prensa-container02 {
-    width: 80%;
+
+    width: 100%;
     height: 100%;
     margin: 90px 0;
     flex-direction: column;
