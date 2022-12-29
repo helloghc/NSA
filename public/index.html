@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <title>SkyAlert</title>
+    <title>SkyAlert US</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -11,7 +11,7 @@
     </style>
     <style data-tag="default-style-sheet">
       html {
-        font-family: Lexend;
+        font-family: Titillium Web;
         font-size: 16px;
       }
 
@@ -21,168 +21,88 @@
         text-decoration: none;
         text-transform: none;
         letter-spacing: normal;
-        line-height: 1.1;
-        color: var(--dl-color-grays-dark100);
-        background-color: var(--dl-color-grays-white100);
+        line-height: 1.15;
+        color: var(--dl-color-scheme-green100);
+        background-color: var(--dl-color-scheme-yellow20);
 
       }
     </style>
-    <link
-      rel="shortcut icon"
-      href="/playground_assets/logo2.png"
-      type="icon/png"
-      sizes="32x32"
-    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
       data-tag="font"
     />
-    <style>
-      ::placeholder{
-      color: #63667066;
-      }
-
-      .float{
-      	position:fixed;
-      	width:auto;
-      	height:auto;
-      	bottom:40px;
-      	right:10px;
-      	background-color:#25d366;
-      	color:#FFF;
-      	border-radius:50px;
-      	text-align:center;
-        font-size:14px;
-      	box-shadow: 2px 2px 3px #999;
-        z-index:100;
-        padding:10px 20px;
-        text-decoration:none;
-      }
-      .float_cotiza{
-      	position:fixed;
-      	width:auto;
-      	height:auto;
-      	bottom:90px;
-      	right:10px;
-      	background-color:#fa7931;
-      	color:#FFF;
-      	border-radius:50px;
-      	text-align:center;
-        font-size:14px;
-      	box-shadow: 2px 2px 3px #999;
-        z-index:100;
-        padding:10px 20px;
-        text-decoration:none;
-      }
-
-      .my-float{
-        width:20px;
-        display:inline-block;
-      }
-      .fa-solid{}
-      .fa-house-laptop{}
-    </style>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      data-tag="font"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <script type="text/javascript"> ... </script> -->
   </head>
   <body>
     <div id="app"></div>
+<<<<<<< Updated upstream
     <div id="modal-root"></div>
     <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+=======
+>>>>>>> Stashed changes
     <script>
       window.onload = () => {
         const runAllScripts = () => {
-          initializeAllSliders();
-        };
+          initializeAllAccordions()
+        }
 
         const listenForUrlChanges = () => {
-          let url = location.href;
+          let url = location.href
           document.body.addEventListener(
-            "click",
+            'click',
             () => {
               requestAnimationFrame(() => {
                 if (url !== location.href) {
-                  runAllScripts();
-                  url = location.href;
+                  runAllScripts()
+                  url = location.href
                 }
-              });
+              })
             },
             true
-          );
-        };
+          )
+        }
 
-        const initializeAllSliders = () => {
-          const allSliders = document.querySelectorAll('[data-type="slider"]');
-          allSliders.forEach((carrousel) => {
-            initializeSlider(carrousel);
-          });
-        };
+        const initializeAllAccordions = () => {
+          const allAccordions = document.querySelectorAll('[data-role="Accordion"]');
 
-        const initializeSlider = (carrousel) => {
-          let currentSlide = 0;
+          allAccordions.forEach((accordion) => {
+            const accordionHeader = accordion.querySelector('[data-type="accordion-header"]')
+            const accordionContent = accordion.querySelector('[data-type="accordion-content"]')
 
-          const slides = carrousel.querySelectorAll('[data-type="slide"]');
-          const nextSlideBtns = carrousel.querySelectorAll(
-            '[data-action="nextSlide"]'
-          );
-          const previousSlideBtns = carrousel.querySelectorAll(
-            '[data-action="previousSlide"]'
-          );
-
-          const changeSlide = (slideIndex, action) => {
-            currentSlide = slideIndex;
-
-            switch (action) {
-              case "next":
-                slideIndex === slides.length - 1
-                  ? (currentSlide = 0)
-                  : currentSlide++;
-                break;
-              case "previous":
-                slideIndex === 0
-                  ? (currentSlide = slides.length - 1)
-                  : currentSlide--;
-            }
-
-            carrousel.style.transform = `translateX(${-100 * currentSlide}%)`;
-          };
-
-          previousSlideBtns.forEach((btn) => {
-            btn.addEventListener("click", () =>
-              changeSlide(currentSlide, "previous")
-            );
-          });
-
+<<<<<<< Updated upstream
           nextSlideBtns.forEach((btn) => {
             btn.addEventListener("click", () =>
               changeSlide(currentSlide, "next")
             );
           });
         };
+=======
+            accordionHeader.addEventListener('click', () => {
+              if (accordionContent.style.maxHeight) {
+                accordionContent.style.maxHeight = ''
+              } else {
+                accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`
+              }
+            })
+          })
+        }
+>>>>>>> Stashed changes
 
-        runAllScripts();
-      };
+        listenForUrlChanges()
+        runAllScripts()
+      }
     </script>
-
-    <!-- <a
-      href="https://api.whatsapp.com/send/?phone=525579020029&text=Quisiera+saber+m%C3%A1s+sobre+SkyAlert+&type=phone_number&app_absent=0"
-      class="float_cotiza"
-      target="_blank"
-    >
-      <i class="fa-solid fa-house-laptop my-float"></i>
-      Cotiza SkyAlert
-    </a> -->
-
-    <!-- <a
-      href="https://api.whatsapp.com/send/?phone=525579020029&text=Quisiera+saber+m%C3%A1s+sobre+SkyAlert+&type=phone_number&app_absent=0"
-      class="float"
-      target="_blank"
-    >
-      <i class="fa fa-laptop my-float"></i>
-      Soporte técnico
-    </a> -->
   </body>
 </html>

@@ -1,0 +1,126 @@
+.hero-hero {
+  width: 100%;
+  position: relative;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+.hero-max-width {
+  width: 100%;
+  height: 684px;
+  opacity: 1;
+  padding: 0px;
+  max-width: 100%;
+  align-self: center;
+  background-size: cover;
+  background-image: url("/playground_assets/banner%201%20-%20foto%20nueva-1500w.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-content {
+  flex: 0 0 auto;
+  width: 493px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.hero-subtitle {
+  color: var(--dl-color-scheme-white);
+  font-size: 12px;
+  margin-left: 50px;
+  margin-bottom: var(--dl-space-space-unit);
+  letter-spacing: 5px;
+}
+.hero-title {
+  color: var(--dl-color-scheme-white);
+  font-size: 52px;
+  font-style: normal;
+  font-family: Urbanist;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-left: 50px;
+  text-shadow: 2px 2px #fff;;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.hero-text {
+  color: #c90000;
+  font-style: normal;
+  font-family: Urbanist;
+  font-weight: 600;
+}
+.hero-description {
+  color: var(--dl-color-scheme-white);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 50px;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.hero-container {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  background: transparent;
+}
+.hero-button {
+  color: #ffffff;
+  margin-left: 50px;
+  border-color: #cb0303;
+  background-color: #cb0303;
+}
+.hero-image {
+  position: relative;
+  padding-bottom: var(--dl-space-space-eightunits);
+}
+.hero-graphic-top {
+  top: 0px;
+  right: -170px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  max-width: 359px;
+  max-height: 359px;
+  object-fit: contain;
+  object-position: center;
+}
+@media(max-width: 991px) {
+  .hero-max-width {
+    justify-content: center;
+  }
+  .hero-content {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin-right: var(--dl-space-space-unit);
+  }
+  .hero-subtitle {
+    margin: 10px;
+  }
+  .hero-description {
+    margin: 10px;
+  }
+  .hero-container {
+    justify-content: center;
+  }
+  .hero-button {
+    width: 50%;
+    margin: 10px;
+  }
+  .hero-image {
+    padding-bottom: var(--dl-space-space-threeunits);
+  }
+}
+@media(max-width: 767px) {
+  .hero-max-width {
+    flex-direction: column-reverse;
+  }
+  .hero-content {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .hero-title {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,111 @@
+.max-width1-max-width {
+  height: 876px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.max-width1-image {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+}
+.max-width1-content {
+  width: 421px;
+  height: 848px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.max-width1-info {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  margin: var(--dl-space-space-twounits);
+  display: flex;
+  opacity: 0.8;
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  border-color: #e71010;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 10%;
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  background-color: #ffffff;
+}
+.max-width1-container {
+  flex: 0 0 auto;
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.max-width1-image1 {
+  width: 130px;
+  align-self: center;
+  object-fit: cover;
+}
+.max-width1-text {
+  color: #923337;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+.max-width1-text03 {
+  color: #923337;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.max-width1-text04 {
+  color: #923337;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+.max-width1-hero-image {
+  width: 659px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  margin-right: -80px;
+  border-radius: 10%;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("/playground_assets/central-business-district-in-singapore-1500w.jpg");
+  background-position: center;
+}
+.max-width1-image2 {
+  width: 100px;
+  opacity: 0.5;
+  object-fit: cover;
+}
+@media(max-width: 991px) {
+  .max-width1-max-width {
+    flex-direction: column;
+  }
+  .max-width1-image {
+    padding-bottom: var(--dl-space-space-threeunits);
+  }
+  .max-width1-content {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .max-width1-hero-image {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media(max-width: 767px) {
+  .max-width1-content {
+    width: 100%;
+    margin-right: 0px;
+  }
+}

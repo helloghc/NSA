@@ -3,37 +3,48 @@ import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
-import NavigationLinks from './navigation-links'
 import './navbar.css'
 
 const Navbar = (props) => {
   return (
-    <div className={`navbar-navbar-container ${props.rootClassName} `}>
-      <header
-        data-role="Header"
-        className="navigation-container navbar-max-width"
-      >
-        <img
-          src="/playground_assets/skyalert_logo_blanco-200h.png"
-          className="navbar-image"
-        />
-        <div className="navbar-nav">
-          <NavigationLinks
-            rootClassName="navigation-links-root-class-name10"
-            className=""
-          ></NavigationLinks>
+    <div className={`navbar-navbar navbar-container ${props.rootClassName} `}>
+      <div className="max-width">
+        <div className="navbar-logo">
+          <Link to="/" className="navbar-navlink">
+            <img
+              alt={props.image_alt}
+              src={props.image_src}
+              className="navbar-image"
+            />
+          </Link>
         </div>
-        <div
-          data-type="BurgerMenu"
-          className="navigation-burger-menu navbar-burger-menu"
-        >
+        <div className="navbar-links">
+          <Link to="/" className="navbar-text navbar-Link">
+            {props.Text}
+          </Link>
+          <Link to="/about" className="navbar-navlink1 navbar-Link">
+            {props.text}
+          </Link>
+          <Link to="/solutions" className="navbar-navlink2 navbar-Link">
+            {props.text1}
+          </Link>
+          <Link to="/how" className="navbar-navlink3 navbar-Link">
+            {props.text2}
+          </Link>
+          <span className="navbar-text1 navbar-Link">{props.text3}</span>
+          <Link to="/form" className="navbar-navlink4 button button-primary">
+            {props.button1}
+          </Link>
+        </div>
+        <div className="navbar-burger-menu">
           <svg viewBox="0 0 1024 1024" className="navbar-icon">
             <path
-              d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
               className=""
             ></path>
           </svg>
         </div>
+<<<<<<< Updated upstream
         <div
           data-type="MobileMenu"
           className="navigation-mobile-menu navbar-mobile-menu"
@@ -131,44 +142,39 @@ const Navbar = (props) => {
           </div>
         </div>
       </header>
+=======
+      </div>
+>>>>>>> Stashed changes
     </div>
   )
 }
 
 Navbar.defaultProps = {
-  image_src: 'cc48d0e5-a601-47f6-ac83-ca5733ad27ae',
-  image_src1: '/playground_assets/logo1-1500h.png',
-  text2: 'App',
-  text4: '¿Por qué SkyAlert?',
-  text11: 'Suite de soluciones',
-  text411: 'SkyAlert News',
-  image_alt1: 'image',
-  text3: 'REDSkyAlert',
-  text41: 'Prensa',
-  image_alt: 'image',
-  image_src2: '3a912356-281e-4abf-b9a2-7ee14ec73835',
-  text: 'Follow us',
-  text1: 'Home',
+  text1: 'Solutions',
+  image_src: '/playground_assets/logo.6d13bf72-200h.png',
+  text: 'About us',
+  text3: 'Press',
   rootClassName: '',
+<<<<<<< Updated upstream
   PrimaryBtn1: 'Acceso a clientes',
+=======
+  Text: 'Home',
+  text2: 'How it works',
+  button1: 'Request a Demo',
+  image_alt: 'image',
+>>>>>>> Stashed changes
 }
 
 Navbar.propTypes = {
-  image_src: PropTypes.string,
-  image_src1: PropTypes.string,
-  text2: PropTypes.string,
-  text4: PropTypes.string,
-  text11: PropTypes.string,
-  text411: PropTypes.string,
-  image_alt1: PropTypes.string,
-  text3: PropTypes.string,
-  text41: PropTypes.string,
-  image_alt: PropTypes.string,
-  image_src2: PropTypes.string,
-  text: PropTypes.string,
   text1: PropTypes.string,
+  image_src: PropTypes.string,
+  text: PropTypes.string,
+  text3: PropTypes.string,
   rootClassName: PropTypes.string,
-  PrimaryBtn1: PropTypes.string,
+  Text: PropTypes.string,
+  text2: PropTypes.string,
+  button1: PropTypes.string,
+  image_alt: PropTypes.string,
 }
 
 export default Navbar

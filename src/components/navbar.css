@@ -1,117 +1,50 @@
-.navbar-navbar-container {
-  top: 0;
-  width: 100%;
+.navbar-navbar {
+  position: relative;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.navbar-logo {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.navbar-image {
-  width: 100px;
-  object-fit: cover;
-}
-.navbar-nav {
-  display: flex;
-}
-.navbar-icon {
-  width: var(--dl-size-size-small);
-  height: var(--dl-size-size-small);
-}
-.navbar-nav1 {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.navbar-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: row;
   justify-content: space-between;
 }
-.navbar-image1 {
-  width: 106px;
+.navbar-navlink {
+  display: contents;
 }
-.navbar-menu-close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navbar-image {
+  width: auto;
+  object-fit: cover;
+  margin-right: 14px;
+  text-decoration: none;
 }
-.navbar-icon02 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-}
-.navbar-nav2 {
+.navbar-links {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 .navbar-text {
-  color: #ffffff;
-  transition: 0.3s;
+  color: #cb0303;
+  margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
-}
-.navbar-text:hover {
-  color: var(--dl-color-backgrounds-primary);
-}
-.navbar-navlink {
-  color: #ffffff;
-  width: 80px;
-  text-align: center;
-  transition: 0.3s;
-  margin-left: var(--dl-space-space-twounits);
-  text-decoration: none;
-}
-.navbar-navlink:hover {
-  color: var(--dl-color-backgrounds-primary);
 }
 .navbar-navlink1 {
-  color: #ffffff;
-  transition: 0.3s;
-  margin-left: var(--dl-space-space-twounits);
+  color: #cb0303;
+  margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
-}
-.navbar-navlink1:hover {
-  color: var(--dl-color-backgrounds-primary);
 }
 .navbar-navlink2 {
-  color: #ffffff;
-  transition: 0.3s;
-  margin-left: var(--dl-space-space-twounits);
+  color: #cb0303;
+  margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
-}
-.navbar-navlink2:hover {
-  color: var(--dl-color-backgrounds-primary);
 }
 .navbar-navlink3 {
-  color: #ffffff;
-  width: 80px;
-  text-align: center;
-  transition: 0.3s;
-  margin-left: var(--dl-space-space-twounits);
+  color: #cb0303;
+  margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-.navbar-navlink3:hover {
-  color: var(--dl-color-backgrounds-primary);
-}
-.navbar-navlink4 {
-  color: #ffffff;
-  transition: 0.3s;
-  margin-left: var(--dl-space-space-twounits);
-  text-decoration: none;
-}
-.navbar-navlink4:hover {
-  color: var(--dl-color-backgrounds-primary);
-}
-.navbar-navlink5 {
-  color: #ffffff;
-  width: 80px;
-  text-align: center;
-  transition: 0.3s;
-  margin-left: var(--dl-space-space-twounits);
-  text-decoration: none;
-}
+<<<<<<< Updated upstream
 .navbar-navlink5:hover {
   color: var(--dl-color-backgrounds-primary);
 }
@@ -124,71 +57,36 @@
   align-items: flex-start;
   flex-direction: column;
 }
+=======
+>>>>>>> Stashed changes
 .navbar-text1 {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  margin-bottom: var(--dl-space-space-oneandhalfunits);
-}
-.navbar-container1 {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-}
-.navbar-icon04 {
-  width: 24px;
-  height: 24px;
-  transition: 0.3s;
+  color: #cb0303;
   margin-right: var(--dl-space-space-twounits);
 }
-.navbar-icon04:hover {
-  fill: var(--dl-color-backgrounds-primary);
-  cursor: pointer;
+.navbar-navlink4 {
+  border-color: #CB0303;
+  text-decoration: none;
+  background-color: #CB0303;
 }
-.navbar-icon08 {
+.navbar-burger-menu {
+  fill: #105749;
   width: 24px;
   height: 24px;
-  transition: 0.3s;
-  margin-right: var(--dl-space-space-twounits);
-}
-.navbar-icon08:hover {
-  fill: var(--dl-color-backgrounds-primary);
-  cursor: pointer;
-}
-.navbar-icon12 {
-  width: 24px;
-  height: 24px;
-  transition: 0.3s;
-  margin-right: var(--dl-space-space-twounits);
-}
-.navbar-icon12:hover {
-  fill: var(--dl-color-backgrounds-primary);
-  cursor: pointer;
-}
-.navbar-icon14 {
-  width: 24px;
-  height: 24px;
-  transition: 0.3s;
-}
-.navbar-icon14:hover {
-  fill: var(--dl-color-backgrounds-primary);
-  cursor: pointer;
 }
 
-@media(max-width: 1200px) {
-  .navbar-nav {
+@media(max-width: 767px) {
+  .navbar-links {
     display: none;
   }
-  .navbar-burger-menu {
-    display: inline;
+  .navbar-icon {
+    fill: var(--dl-color-scheme-green100);
   }
 }
-@media(max-width: 896px) {
-  .navbar-max-width {
-    width: 100%;
-    padding-left: 5px;
+@media(max-width: 821px){
+  .navbar-links{
+    flex: auto;
   }
+<<<<<<< Updated upstream
   .navbar-nav {
     width: 100%;
   }
@@ -250,3 +148,7 @@
     text-align: left;
   }
 }
+=======
+
+}
+>>>>>>> Stashed changes
