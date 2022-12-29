@@ -1,0 +1,9 @@
+.input-container {
+  display: flex;
+  position: relative;
+}
+.input-input {
+  width: 369px;
+  height: 55px;
+  margin: var(--dl-space-space-unit);
+}

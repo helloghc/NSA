@@ -1,0 +1,101 @@
+.licenciatarios-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form{
+    width: 70%;
+    padding: 20px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.licenciatarios-form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;   
+}
+.licenciatarios-form-container-one{
+    flex: 40%;
+}
+.licenciatarios-form-container-two{
+    flex: 40%;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+
+}
+.input-container input{
+    font-family: inherit;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    
+}
+.input-container p{
+    margin: 3px 10px;
+    font-family: inherit;
+    font-size: large;
+}
+.alert{
+    font-weight: bold;
+    color: #dc3545;
+    margin: 5px;
+}
+.radio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    font-family: inherit;
+    font-size: large;
+}
+.radiobuttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.radiobuttons label{
+    font-family: inherit;
+    font-size: large;
+}
+.radioButton{
+    width: 40px;
+    height: 40px;
+}
+.other{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.other-text{
+    font-family: inherit;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 80%;
+    height: 40px;
+    margin: 5px 0px;
+}
+
+.input-submit-container input{
+    font-family: inherit;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 80px;
+    height: 40px;
+    margin: 15px;
+    border: 2px solid;  
+    background-color: transparent;
+}
