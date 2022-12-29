@@ -44,21 +44,6 @@
   margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-<<<<<<< Updated upstream
-.navbar-navlink5:hover {
-  color: var(--dl-color-backgrounds-primary);
-}
-.navbar-primary-btn {
-  margin-top: var(--dl-space-space-oneandhalfunits);
-}
-.navbar-social-media {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-=======
->>>>>>> Stashed changes
 .navbar-text1 {
   color: #cb0303;
   margin-right: var(--dl-space-space-twounits);
@@ -86,69 +71,5 @@
   .navbar-links{
     flex: auto;
   }
-<<<<<<< Updated upstream
-  .navbar-nav {
-    width: 100%;
-  }
-}
-@media(max-width: 763px) {
-  .navbar-nav {
-    display: none;
-  }
-  .navbar-nav2 {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .navbar-navlink {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navbar-navlink1 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navbar-navlink2 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navbar-navlink3 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navbar-navlink4 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navbar-navlink5 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-}
-@media(max-width: 425px) {
-  .navbar-max-width {
-    height: 123px;
-    margin-bottom: 50px;
-  }
-  .navbar-mobile-menu {
-    background-color: grey;
-  }
-  .navbar-nav2 {
-    width: 100%;
-  }
-  .navbar-navlink {
-    width: 100%;
-    text-align: left;
-  }
-  .navbar-navlink3 {
-    width: 100%;
-    text-align: left;
-  }
-  .navbar-navlink5 {
-    width: 100%;
-    text-align: left;
-  }
-}
-=======
 
 }
->>>>>>> Stashed changes

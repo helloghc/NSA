@@ -16,24 +16,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-<<<<<<< Updated upstream
-        <title>Sistema de Alertamiento Sísmico: Seguridad Garantizada</title>
-        <meta
-          name="description"
-          content="Sistema de alertamiento sísmico que detecta los eventos momentos antes de que se produzcan y notifica a los usuarios en peligro. ¡Conócelo!"
-        />
-        <meta
-          property="og:title"
-          content="Sistema de Alertamiento Sísmico: Seguridad Garantizada"
-        />
-        <meta
-          property="og:description"
-          content="Sistema de alertamiento sísmico que detecta los eventos momentos antes de que se produzcan y notifica a los usuarios en peligro. ¡Conócelo!"
-        />
-=======
         <title>SkyAlert US</title>
         <meta property="og:title" content="SkyAlert US" />
->>>>>>> Stashed changes
       </Helmet>
       <Top rootClassName="top-root-class-name"></Top>
       <Navbar rootClassName="navbar-root-class-name"></Navbar>

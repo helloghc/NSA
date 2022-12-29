@@ -47,11 +47,6 @@
   </head>
   <body>
     <div id="app"></div>
-<<<<<<< Updated upstream
-    <div id="modal-root"></div>
-    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-=======
->>>>>>> Stashed changes
     <script>
       window.onload = () => {
         const runAllScripts = () => {
@@ -81,14 +76,6 @@
             const accordionHeader = accordion.querySelector('[data-type="accordion-header"]')
             const accordionContent = accordion.querySelector('[data-type="accordion-content"]')
 
-<<<<<<< Updated upstream
-          nextSlideBtns.forEach((btn) => {
-            btn.addEventListener("click", () =>
-              changeSlide(currentSlide, "next")
-            );
-          });
-        };
-=======
             accordionHeader.addEventListener('click', () => {
               if (accordionContent.style.maxHeight) {
                 accordionContent.style.maxHeight = ''
@@ -98,7 +85,6 @@
             })
           })
         }
->>>>>>> Stashed changes
 
         listenForUrlChanges()
         runAllScripts()
