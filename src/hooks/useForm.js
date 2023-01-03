@@ -35,7 +35,7 @@ export const useForm = (initialForm, validateForm) => {
         if(Object.keys(errors).length === 0){
             alert("Enviando Formulario");
             setLoading(true);
-            helpHttp().post("https://formsubmit.co/ajax/d.ariza@skyalert.mx", {
+            helpHttp().post("https://formsubmit.co/ajax/damaris@skyalert.mx", {
                 body: form,
                 headers:{
                     "Content-type":"application/json",

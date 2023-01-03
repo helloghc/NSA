@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Helmet } from 'react-helmet'
-
+import Contactform from '../components/contactform'
 import Top from '../components/top'
 import Navbar from '../components/navbar'
 import Form from '../components/form'
@@ -176,6 +176,7 @@ const About = (props) => {
       <span className="about-text44">
         We have the perfect solution, shortly an advisor will assist you
       </span>
+      <Contactform></Contactform>
       <Form></Form>
     </div>
   )
