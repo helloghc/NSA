@@ -6,6 +6,8 @@ import Top from '../components/top'
 import Navbar from '../components/navbar'
 import Cards from '../components/cards'
 import Form from '../components/form'
+import Footer from '../components/footer'
+import Contactform from '../components/contactform'
 import './solutions.css'
 
 const Solutions = (props) => {
@@ -660,7 +662,8 @@ const Solutions = (props) => {
       <span className="solutions-text179 before-Heading">
         We have the perfect solution, shortly an advisor will assist you
       </span>
-      <Form></Form>
+      <Contactform></Contactform>
+      <Footer></Footer>
     </div>
   )
 }

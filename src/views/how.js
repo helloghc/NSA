@@ -5,6 +5,8 @@ import { Helmet } from 'react-helmet'
 import Top from '../components/top'
 import Navbar from '../components/navbar'
 import Form from '../components/form'
+import Footer from '../components/footer'
+import Contactform from '../components/contactform'
 import './how.css'
 
 const How = (props) => {
@@ -210,7 +212,8 @@ const How = (props) => {
       <span className="how-text63 before-Heading">
         We have the perfect solution, shortly an advisor will assist you
       </span>
-      <Form></Form>
+      <Contactform></Contactform>
+      <Footer></Footer>
     </div>
   )
 }

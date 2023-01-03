@@ -7,8 +7,10 @@ import Top from '../components/top'
 import Navbar from '../components/navbar'
 import Hero from '../components/hero'
 import Card from '../components/card'
+import Footer from '../components/footer'
 import Form from '../components/form'
 import Licencitarios from '../components/licencitarios'
+import Contactform from '../components/contactform'
 import './home.css'
 
 
@@ -246,8 +248,8 @@ const Home = (props) => {
       <span className="home-text46 before-Heading">
         We have the perfect solution, shortly an advisor will assist you
       </span>
-      <Form></Form>
-      <Licencitarios></Licencitarios>
+      <Contactform></Contactform>
+      <Footer></Footer>
     </div>
   )
 }

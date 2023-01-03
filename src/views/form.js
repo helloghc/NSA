@@ -5,6 +5,8 @@ import { Helmet } from 'react-helmet'
 import Top from '../components/top'
 import Navbar from '../components/navbar'
 import Form from '../components/form'
+import Contactform from '../components/contactform'
+import Footer from '../components/footer'
 import './form.css'
 
 const Formt = (props) => {
@@ -24,7 +26,9 @@ const Formt = (props) => {
       <span className="form-text3 before-Heading">
         We have the perfect solution, shortly an advisor will assist you
       </span>
-      <Form></Form>
+      <Contactform></Contactform>
+      <Footer></Footer>
+
     </div>
   )
 }

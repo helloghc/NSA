@@ -6,6 +6,7 @@ import Top from '../components/top'
 import Navbar from '../components/navbar'
 import Form from '../components/form'
 import './about.css'
+import Footer from '../components/footer'
 
 const About = (props) => {
   return (
@@ -177,7 +178,7 @@ const About = (props) => {
         We have the perfect solution, shortly an advisor will assist you
       </span>
       <Contactform></Contactform>
-      <Form></Form>
+      <Footer></Footer>
     </div>
   )
 }

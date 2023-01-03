@@ -80,31 +80,31 @@ const contactform = () => {
     var estadoSeleccionado;
 
     return (
-        <div className="licenciatarios-container">
+        <div className="contactform-container">
             <form onSubmit={handleSubmit}>
-                <div className="licenciatarios-form-container">
-                    <div className="licenciatarios-form-container-one">
+                <div className="contactformtwo-container">
+                    <div className="contactform-container-one">
                         <br/><br/>
-                        <div className="input-container">
+                        <div className="contact-input-container">
                             <input type="text" name="name" placeholder="Name:" onBlur={handleBlur} onChange={handleChange} value={form.name} required />
                             {errors.name && <p className="alert">{errors.name}</p>}
                         </div>
-                        <div className="input-container">
+                        <div className="contact-input-container">
                             <input type="text" name="email" placeholder="Email:" onBlur={handleBlur} onChange={handleChange} value={form.email} required />
                             {errors.email && <p className="alert">{errors.email}</p>}
                         </div>
-                        <div className="input-container">
+                        <div className="contact-input-container">
                             <input type="text" name="nameBusiness" placeholder="Company:" onBlur={handleBlur} onChange={handleChange} value={form.nameBusiness} required />
                             {errors.nameBusiness && <p className="alert">{errors.nameBusiness}</p>}
                         </div>
-                        <div className="input-container">
+                        <div className="contact-input-container">
                             <input type="text" name="cellPhone" placeholder="10 digit phone number:" onBlur={handleBlur} onChange={handleChange} value={form.cellPhone} required />
                             {errors.cellPhone && <p className="alert">{errors.cellPhone}</p>}
                         </div>
                     </div>
-                    <div className="licenciatarios-form-container-two">
+                    <div className="contactform-container-two">
                         
-                        <div className="input-container">
+                        <div className="contact-input-container">
                             <p>How many people do you want to alert?</p>
                             <select name="state" id="selState" className="select" onBlur={handleChargeCities} onChange={handleChange} value={form.state.select} required>
                                 <option value={-1}>---</option>
@@ -117,25 +117,25 @@ const contactform = () => {
                         <div className="radio-container">
                             <p>How did you hear about us?</p>
                             <div className="radiobuttons">
-                                <input type="radio" name="options" className="radioButton" value={form.options.select} id="redes" /> <label for="redes">Facebook</label>
+                                <input type="radio" name="options" className="contact-radioButton" value={form.options.select} id="redes" /> <label for="redes">Facebook</label>
                             </div>
                             <div className="radiobuttons">
-                                <input type="radio" name="options" className="radioButton" value={form.options.select} id="web" /> <label for="web">Instagram</label>
+                                <input type="radio" name="options" className="contact-radioButton" value={form.options.select} id="web" /> <label for="web">Instagram</label>
                             </div>
                             <div className="radiobuttons">
-                                <input type="radio" name="options" className="radioButton" value={form.options.select} id="recomendacion" /> <label for="recomendacion">Twitter</label>
+                                <input type="radio" name="options" className="contact-radioButton" value={form.options.select} id="recomendacion" /> <label for="recomendacion">Twitter</label>
                             </div>
                             <div className="radiobuttons">
-                                <input type="radio" name="options" className="radioButton" value={form.options.select} id="redes" /> <label for="redes">Website</label>
+                                <input type="radio" name="options" className="contact-radioButton" value={form.options.select} id="redes" /> <label for="redes">Website</label>
                             </div>
                             <div className="radiobuttons">
-                                <input type="radio" name="options" className="radioButton" value={form.options.select} id="web" /> <label for="web">Recommendation</label>
+                                <input type="radio" name="options" className="contact-radioButton" value={form.options.select} id="web" /> <label for="web">Recommendation</label>
                             </div>
                             <div className="radiobuttons">
-                                <input type="radio" name="options" className="radioButton" value={form.options.select} id="recomendacion" /> <label for="recomendacion">Other</label>
+                                <input type="radio" name="options" className="contact-radioButton" value={form.options.select} id="recomendacion" /> <label for="recomendacion">Other</label>
                             </div>
                         </div>
-                        <div className="input-container">
+                        <div className="contact-input-container">
                             <textarea type="text" name="request" placeholder="Another topics or request:" onBlur={handleBlur} onChange={handleChange} value={form.request} required />
                         </div>
 
@@ -143,12 +143,11 @@ const contactform = () => {
                     </div>
                 </div>
                 
-                <div className="input-submit-container obbt">
+                <div className="contact-input-submit-container obbt">
                     <input type="submit" value="Submit" />
                     <br/>
                 </div>
             </form>
-
         </div>
     )
 }

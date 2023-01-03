@@ -1,5 +1,5 @@
 
-.licenciatarios-container{
+.contactform-container{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -15,27 +15,27 @@ form{
     align-items: center;
 
 }
-.licenciatarios-form-container{
+.contactformtwo-container{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 }
-.licenciatarios-form-container-one{
+.contactform-container-one{
     flex: 40%;
 }
-.licenciatarios-form-container-two{
+.contactform-container-two{
     flex: 40%;
 }
-.input-container{
+.contact-input-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px;
 
 }
-.input-container input{
+.contact-input-container input{
     font-family: inherit;
     border: 1px solid;
     border-radius: 5px;
@@ -44,7 +44,7 @@ form{
     margin: 5px 0px;
 
 }
-.input-container textarea{
+.contact-input-container textarea{
     font-family: inherit;
     border: 1px solid;
     border-radius: 5px;
@@ -111,7 +111,7 @@ form{
     font-size: large;
 }
 
-.input-submit-container input{
+.contact-input-submit-container input{
     font-family: inherit;
     font-size: large;
     font-weight: bold;
@@ -124,7 +124,7 @@ form{
     border: 2px solid;
     background-color: #CB0303;
 }
-.input-submit-container input:hover{
+.contact-input-submit-container input:hover{
     background-color: #dc3545;
 }
 @media(max-width: 425px) {
@@ -132,14 +132,14 @@ form{
       width: 100%;
       padding: 0%;
     }
-    .licenciatarios-form-container{
+    .contactform-container{
         width: 100%;
     }
-    .licenciatarios-form-container-one{
+    .contactform-container-one{
         width: 100%;
         flex: 0 0 auto;
     }
-    .licenciatarios-form-container-two{
+    .contactform-container-two{
         width: 100%;
         flex: 0 0 auto;
         position: relative;
